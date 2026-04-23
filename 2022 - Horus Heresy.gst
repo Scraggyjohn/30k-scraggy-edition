@@ -3307,7 +3307,6 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           </profiles>
           <infoLinks>
             <infoLink id="f475-5c5f-0dbd-b4ae" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-            <infoLink name="Rending (X)" id="d224-0d5c-89d2-cc81" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -3563,7 +3562,6 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           </modifiers>
         </infoLink>
         <infoLink id="5587-6f00-32f2-2bde" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink name="Wrecker" id="9fb3-3adf-b562-ef83" hidden="false" type="rule" targetId="ba77-a802-55df-da67"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -3618,7 +3616,6 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           </modifiers>
         </infoLink>
         <infoLink id="52e7-00cc-66f2-71b5" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink name="Wrecker" id="c785-4227-405c-9e5d" hidden="false" type="rule" targetId="ba77-a802-55df-da67"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4150,7 +4147,6 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
             <modifier type="set" field="name" value="Concussive (1)"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Haywire" id="2e4f-c0c0-6c02-b36e" hidden="false" type="rule" targetId="1dd4-7a75-5c59-8425"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4904,7 +4900,6 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <infoLinks>
         <infoLink id="b15a-98ae-991a-0074" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="a42a-07dd-64d7-6bb6" name="Guided Fire" hidden="false" targetId="fa1e-0112-943e-b1f6" type="rule"/>
-        <infoLink name="Auto-Servo Tracking" id="0e58-1282-659b-dae7" hidden="false" type="rule" targetId="8dd9-87cc-a918-a9d4"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9803,7 +9798,6 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="2013-d374-760f-d5e6" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="76f0-c871-4618-dc2a" name="Grenade launcher - Frag" hidden="false" targetId="7223-39b1-9ee8-bbc0" type="profile"/>
         <infoLink id="b1e5-639f-5e03-46d4" name="Grenade launcher - Krak" hidden="false" targetId="9edf-5b4f-f269-c98e" type="profile"/>
-        <infoLink name="Rupture (X)" id="426f-7860-371d-42b2" hidden="false" type="rule" targetId="baca-a60f-3907-85a0"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -18202,13 +18196,6 @@ When assigning additional models to units using the Among the Ranks and Militia 
       <description>An attack that has this special rule does not roll to Wound using the normal rules, instead roll To Wound by comparing the Attack’s Strength to the target’s Strength Characteristic, using the Strength Characteristic in place of Toughness on the To Wound table. If any Attacks with this special rule inflict Wounds, do not make Armour Saves or Damage Mitigation rolls for those Wounds – instead for each Wound inflicted by an Attack with this special rule, reduce the Movement Characteristic of all models in the target unit by the number in brackets that is included as part of this special rule (to a minimum of 1) until the end of the controlling player’s next turn. The Wounds caused by Attacks with this special rule are then discarded and neither reduce the target model’s Wounds Characteristic nor cause any models to be removed as casualties (this does not affect Wounds inflicted by Attacks without this special rule that are part of the same Shooting Attack).
 
 Attacks with this special rule have no effect on models with the Vehicle or Primarch Unit Type, or on any model that starts the battle with 6 or more Wounds. Do not roll To Wound if Hits from an attack with this special rule are allocated to such a model and simply discard those Hits. Similarly, models of these Types are not affected by the modifiers to Movement inflicted by the Entangle special rule, regardless of whether other models in the same unit are affected.</description>
-    </rule>
-    <rule name="Rupture (X)" id="baca-a60f-3907-85a0" hidden="false">
-      <description>When rolling To Wound for a model that has the Rupture (X) Special Rule, or is attacking with a weapon that has the Rupture (X) Special Rule, for each To Wound roll equal to or higher than the value listed in brackets, the Controlling Player must resolve these wounds at AP3instead of the weapon’s normal AP value. For example, a model with the Rupture (5+) Special Rule that rolls To Wound and rolls a result of ‘5’ or higher, the Wound inflicted gains an AP of ‘3’ regardless of the AP value listed on the weapon’s profile. Note that a weapon that has both the Rupture (X) and the Gets Hot Special Rules always uses the base AP of the weapon when rolls of ‘1’ To Hit inflict Wounds on the attacking model.</description>
-    </rule>
-    <rule name="Auto-Servo Tracking" id="8dd9-87cc-a918-a9d4" hidden="false">
-      <description>A weapon with this Special Rule can fire at a different target to the
-other weapons the model is armed with.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
