@@ -9124,6 +9124,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
           </profiles>
           <infoLinks>
             <infoLink id="e382-ce92-773a-f9ab" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+            <infoLink name="Hardwired Defences" id="6e90-3596-1c83-e0b8" hidden="false" type="rule" targetId="802c-7cdf-6c7b-ffed"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="c449-ec4e-fdc8-0ff5" name="Turret Mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="546a-bd8a-537c-4883">
@@ -9166,7 +9167,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
         </profile>
         <profile id="c850-d8a1-99f1-5c9f" name="Advanced Reaction: Void Shield Envelope" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
           <characteristics>
-            <characteristic name="Description" typeId="c627-4637-8de5-65fb">Void Shield Envelope: Thie Advanced Reaction may be made during the Shooting phase whenever an enemy unit targets a friendly unit that has at least half of its models within 6&quot; of a friendly Void Shield Generator with a Shooting Attack, excluding friendly units that include any models with the Monstrous, Gargantuan, Knight, Titan, Super-heavy of Flyer Sub-types. Before the Active player has resolved any Hit rolls, the Reactive player may choose to expend one of their Reactions for that Phase to have the unit targeted by the Shooting Attack gain the Shrouded (4+) special rule until the end of the Shooting phase. Note that this Advanced Reaction does not improve any existing instances of the Shrouded (X) special rule that a unit may have. The unit that has gained the Shrouded (4+) special rule as a result of this Reaction does not count as having made a Reaction, and may itself make a Reaction provided it would otherwise be able to do so, and the Reactive player has sufficient Reaction allotment remaining in that Phase.</characteristic>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">Void Shield Envelope: Thie Advanced Reaction may be made during the Shooting phase whenever an enemy unit targets a friendly unit that has at least half of its models within 6&quot; of a friendly Void Shield Generator with a Shooting Attack, excluding friendly units that include any models with the Monstrous, Gargantuan, Knight, Titan, Super-heavy of Flyer Sub-types. Before the Active player has resolved any Hit rolls, the Reactive player may choose to expend one of their Reactions for that Phase to have the unit targeted by the Shooting Attack gain an Invulnerable Save of 4+ until the end of the Shooting phase. Note that this Advanced Reaction does not improve any existing Invulnerable Saves that a unit may have. The unit that has gained an Invulnerable save as a result of this Reaction does not count as having made a Reaction, and may itself make a Reaction provided it would otherwise be able to do so, and the Reactive player has sufficient Reaction allotment remaining in that Phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9208,11 +9209,13 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       </profiles>
       <rules>
         <rule id="0c41-2dac-1c20-8170" name="Hammerfall Strike" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false">
-          <description>A model with this special rule is deployed anywhere within the controlling player&apos;s deployment zone, more than 12&quot; away from any enemy models, after models with the Scout of Infiltrate special rules. If both players have models with this special rule, roll off to see who will deploy them first.</description>
+          <description>Rather than deploying this Fortification as per the usual rules for Fortifications, you may choose instead to assign it to a Drop Pod Assault or Deep Strike Assault as normal. If assigned in this manner to one of the specified deployment methods, the Hammerfall Bunker gains the Orbital Assault Vehicle, Inertial Guidance System, and Deep Strike Special Rules. This does allow you to place the Hammerfall Bunker outside of your Deployment Zone. Note that this is an exception to the normal rules for Fortifications, and if assigned in this way, you may choose to select a Hammerfall Bunker in a Rite of War: Drop Pod Assault detachment.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="af2f-a797-a259-ec68" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+        <infoLink name="Power of the Machine Spirit" id="1a98-2a9d-ed4a-e464" hidden="false" type="rule" targetId="5a93-13e0-809d-782a"/>
+        <infoLink name="Hardwired Defences" id="bd86-c56f-339f-3ce4" hidden="false" type="rule" targetId="802c-7cdf-6c7b-ffed"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a2ac-a5fa-9bd1-d0b9" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true" defaultSelectionEntryId="c496-e4dc-1ee7-09d9">
@@ -10795,14 +10798,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Twin-linked, Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Large Blast (5&quot;), Rupture (4+), Breaching (6+), Pinning, Shell Shock(1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="dba4-3c89-1d3c-611e" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink id="39be-2e93-8bc1-68e6" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
         <infoLink id="8a6b-a6f2-9a43-b785" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink name="Rupture (X)" id="17a6-51e0-e57c-d4c8" hidden="false" type="rule" targetId="a33b-5786-fa09-4648"/>
+        <infoLink name="Breaching (X)" id="9e2d-0844-53f1-9109" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c"/>
+        <infoLink name="Shell Shock (X)" id="615a-47c9-d06a-5ef7" hidden="false" type="rule" targetId="46b7-63a1-941c-96a5"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -10815,7 +10820,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Brutal (2), Twin-linked</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Brutal (2), Twin-linked, Exoshock (4+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10827,6 +10832,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </modifiers>
         </infoLink>
         <infoLink id="33f7-504d-efe2-5e55" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink name="Exoshock (X)" id="f8a8-454d-fb43-b359" hidden="false" type="rule" targetId="69ca-318a-b47a-7a3c"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -10836,21 +10842,17 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <profiles>
         <profile id="f431-9fbb-df6b-b8cc" name="Macharius Rotary Bolt Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 10, Breaching (6+), Pinning, Twin-linked</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 15, Shell Shock (1), Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="18b3-e92f-ee03-2f72" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
         <infoLink id="fa80-5b06-ce2a-bca3" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="96e1-ad1a-b636-69a" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Breaching (6+)"/>
-          </modifiers>
-        </infoLink>
+        <infoLink name="Shell Shock (X)" id="9a41-4764-733b-66e5" hidden="false" type="rule" targetId="46b7-63a1-941c-96a5"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Beholden to None" hidden="true" id="956a-36dc-217e-63b1">
@@ -18304,6 +18306,12 @@ A model with this Special Rule is immune to the effects of the Armourbane (Melt
     </rule>
     <rule name="Tank Desant (X)" id="9a24-b388-f83a-ce56" hidden="false">
       <description>Any unit embarked upon a Transport with this Special Rule may fire up to (X) ranged weapons (where X is the number in brackets next to the Special Rule), measuring from the Transport’s model. If the unit chooses to fire in this way, they are counted as having moved-note that this may prevent them from shooting certain weapon types. Units with any Special Rule that allows them to count as stationary for the purposes of Shooting attacks (such as Relentless, Legiones Astartes (Death Guard), etc) may not benefit from them whilst embarked on a Transport with this Special Rule.</description>
+    </rule>
+    <rule name="Exposed Compartment" id="2aaa-0496-6398-243d" hidden="false">
+      <description>Any rolls on the Vehicle Damage Table that target a model with this Special Rule add +1 to the result.</description>
+    </rule>
+    <rule name="Hardwired Defences" id="802c-7cdf-6c7b-ffed" hidden="false">
+      <description>A Fortification with this Special Rule may not be claimed by a player which did not originally select them as part of their army.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

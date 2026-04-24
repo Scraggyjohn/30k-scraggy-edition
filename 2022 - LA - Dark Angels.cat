@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ee5e-198e-1b19-4b9f" name="LA -   I: Dark Angels" revision="42" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ee5e-198e-1b19-4b9f" name="LA -   I: Dark Angels" revision="43" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
   <entryLinks>
     <entryLink id="7653-8041-8d1c-c872" name="Dreadwing Interemptor Squad" hidden="false" collective="false" import="false" targetId="3008-e8ed-9e97-71c9" type="selectionEntry">
       <categoryLinks>
@@ -3454,9 +3454,9 @@
             <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="aef2-c8df-6a1a-fb48" name="Internal Refractor Field" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile name="Excindio Battle-automata" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="67a9-e023-9371-0626">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This model has a 5+ Invulnerable save. In addition, should the model lose its last wound then all models within D6+4&quot; suffer a Str 8 AP - hit.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">For the purposes of the Dreadnought Transport special rule, a model with this special rule is counted as having the Dreadnought unit type.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3690,9 +3690,10 @@
         </entryLink>
         <entryLink id="42cc-cf88-b137-d2de" name="Animatus Excindor (Cybertheurgic Weapon)" hidden="false" collective="false" import="true" targetId="caa2-99d2-b7a0-21b7" type="selectionEntry"/>
         <entryLink id="a7b4-ef3e-9d9e-eae0" name="Shackled Artificia - Unit Type" hidden="false" collective="false" import="true" targetId="26ab-ceec-f2da-8bfb" type="selectionEntry"/>
+        <entryLink import="true" name="Atomantic Deflector" hidden="false" id="3697-3952-0470-1ef2" type="selectionEntry" targetId="38fb-9a0b-edef-a497"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="350"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="300"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="28ab-ad48-d8b3-0d5d" name="Farith Redloss" publicationId="d0df-7166-5cd3-89fd" page="45" hidden="false" collective="false" import="true" type="unit">
@@ -3866,6 +3867,40 @@
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="a032-e5f1-4ff5-b03f" name="Character" primary="false"/>
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="c16f-7f75-4e46-ab84" name="Unique Sub-type" primary="false"/>
           </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Siege Breaker" hidden="false" id="da4d-ea60-25b8-be9a" publicationId="a716-c1c4-7b26-8424" page="112" collective="false">
+          <modifiers>
+            <modifier type="set" value="0" field="costs"/>
+          </modifiers>
+          <rules>
+            <rule name="Art of Destruction" id="3a31-f617-7489-2f2e" hidden="false">
+              <description>At the start of each Shooting phase, the controlling player may nominate one friendly unit with at least one model within 6&quot; of a model with this special rule. That unit gains the benefits of the Sunder special rule for the duration of that Shooting phase.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Sunder" id="12f4-7c3f-9e3e-d0d6" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Siege Breaker:" hidden="false" id="14c0-aa37-b1dd-cb41" targetId="8247-54dc-9194-948f" primary="false"/>
+            <categoryLink name="Legion Consularis:" hidden="false" id="3ea3-f14e-d2a4-86f2" targetId="4171-e276-e90d-b8e5" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Nuncio-Vox" hidden="false" id="2a2b-4dbc-c12d-73a2" collective="false" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9157-375e-59e4-3014" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59e3-5677-6b86-f6ce" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Phosphex Bomb" hidden="false" id="9ff4-554f-a197-60de" collective="false" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a906-8e56-b4ff-dbf9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="f4a1-ed45-543f-06c3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4046,7 +4081,7 @@ Selenite Shard-bolt Pistol</description>
               </profiles>
               <rules>
                 <rule id="fbd8-5d81-3afd-4e6a" name="Blade charge" hidden="false">
-                  <description>Once per battle, a unit that includes any models with weapons with this special rule may declare a Blade Charge at the start of any of the controlling player’s Assault phases. For the duration of that Phase, the attacks made by all models in the unit with weapons with the Blade Charge special rule gain the Rending (3+) special rule in addition to any other effects their weapons might have. This does not replace or improve any other versions of the Rending (X) special rule already possessed by  the unit.</description>
+                  <description>Once per battle, a unit that includes any models with weapons with this special rule may declare a Blade Charge at the start of any of the controlling player’s Assault phases. For the duration of that Phase, the attacks made by all models in the unit with weapons with the Blade Charge special rule gain the Rending (3+) special rule in addition to any other effects their weapons might have.</description>
                 </rule>
               </rules>
               <infoLinks>
