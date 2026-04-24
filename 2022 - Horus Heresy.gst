@@ -6179,6 +6179,22 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Bayonet Option" id="8077-632e-4887-9748" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Bayonet" hidden="false" id="49fc-b231-ba71-57b1" type="selectionEntry" targetId="6904-6936-d6ca-a0eb">
+              <modifiers>
+                <modifier type="set" value="1" field="costs"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Chain Bayonet" hidden="false" id="ef1a-b959-2df5-ab0d" type="selectionEntry" targetId="bd82-cef6-67f8-19b5">
+              <modifiers>
+                <modifier type="set" value="2" field="costs"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="d3eb-73ae-7b59-c348" name="Banestrike Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
