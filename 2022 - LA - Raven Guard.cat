@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d21e-9c80-a7f8-728c" name="LA - XIX: Raven Guard" revision="39" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d21e-9c80-a7f8-728c" name="LA - XIX: Raven Guard" revision="40" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="84cc-e59c-174e-fb25" name="Mor Deythan Squad" hidden="false" collective="false" import="false" targetId="c268-08ac-5b90-d034" type="selectionEntry">
       <categoryLinks>
@@ -4167,6 +4167,12 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
           </constraints>
         </entryLink>
         <entryLink id="9ae4-9d11-aa95-e24d" name="Retinue" hidden="false" collective="false" import="true" targetId="5a61-7572-048d-9bb4" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Refractor Field" hidden="false" id="fa01-fc0c-2320-f159" type="selectionEntry" targetId="a06a-55a5-070b-1d0e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5fbd-258f-113e-2505" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e96-3226-bdd2-e91c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="140"/>

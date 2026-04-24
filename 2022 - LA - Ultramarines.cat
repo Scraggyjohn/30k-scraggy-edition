@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="46" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="47" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="76b3-52d9-a195-2b31" name="XIII: Ultramarines" hidden="false" collective="false" import="false" targetId="8e0f-3552-8842-f281" type="selectionEntry">
       <modifiers>
@@ -4399,6 +4399,7 @@
       <categoryLinks>
         <categoryLink id="2e8a-b2ef-e4fc-cf8d" name="Dreadnought Unit Type" hidden="false" targetId="4280-4963-02b5-e31d" primary="false"/>
         <categoryLink id="6c25-0ad5-bf61-85dd" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="7a55-448b-fac8-ff9f" primary="false" name="Character"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5204-ec1a-dfe5-1940" name="Honoured Telemechrus" hidden="false" collective="false" import="true" type="model">
@@ -4409,7 +4410,7 @@
           <profiles>
             <profile id="cf1b-f8e9-add2-6034" name="Honoured Telemechrus" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Unique)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Unique)(Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
@@ -4495,6 +4496,13 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
       </costs>
+      <profiles>
+        <profile name="Veteran&apos;s Aura" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6094-f817-7929-f388">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Honoured Telemechrus grants the benefit of a Legion Vexilla to all friendly Legiones Astartes (Ultramarines) units which have at least one model within 12”.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="314d-f363-fb52-743a" name="Locutarus Storm Squad" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -4687,7 +4695,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
               </costs>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="af02-ccab-4f73-98c0" name="Infantry Unit Type" primary="false"/>
@@ -4738,7 +4746,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
               </costs>
               <infoLinks>
                 <infoLink id="5a10-84e2-6ebf-db4f" name="Locutarus" targetId="a006-002c-28d1-bc61" type="profile"/>
@@ -5315,7 +5323,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Breaching (4+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Breaching (4+)</characteristic>
           </characteristics>
         </profile>
       </profiles>

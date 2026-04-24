@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="48" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="a119-3943-4b8b-b651" name="Captain Lucius" hidden="true" collective="false" import="false" targetId="0707-1e4b-27da-9cd4" type="selectionEntry">
       <modifiers>
@@ -4649,15 +4649,31 @@ If any of these are true then Captain Saul Tarvitz and any friendly units with a
             <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Rylanor the Unyielding" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d275-39a3-fd1a-8f37">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Rylanor The Unyielding grants the benefit of a Legion Vexilla to all friendly Legiones Astartes (Emperor’s Children) units which have at least one model within 12”</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="d4b7-14c2-70f2-06a4" name="Crusader" hidden="false" targetId="c705-0829-75f6-a785" type="rule"/>
         <infoLink id="8fff-2cd7-b38c-e631" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
+        <infoLink name="It Will Not Die (X)" id="762d-371f-a5dc-6301" hidden="false" type="rule" targetId="2784-d0be-a4e2-890f">
+          <modifiers>
+            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hatred (X)" id="f964-f123-e741-785e" hidden="false" type="rule" targetId="dc0b-fe69-6b71-e0a4">
+          <modifiers>
+            <modifier type="set" value="Hatred (Traitors)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7acc-1ab8-5189-f03c" name="Dreadnought Unit Type" hidden="false" targetId="4280-4963-02b5-e31d" primary="false"/>
         <categoryLink id="0a18-eece-0831-f72d" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink targetId="aa94-5c65-d1f1-46a4" id="ba67-2d9d-478f-ab37" name="Unique Sub-type" primary="false"/>
+        <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="ee4a-0c24-e8c2-28b8" primary="false" name="Character"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="53b4-68bd-0941-24e4" name="Atomantic Deflector" hidden="false" collective="false" import="true" targetId="38fb-9a0b-edef-a497" type="selectionEntry">
@@ -4698,6 +4714,11 @@ If any of these are true then Captain Saul Tarvitz and any friendly units with a
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="215"/>
       </costs>
+      <rules>
+        <rule name="Shattered Legionary" id="f2d0-e358-1b9d-4fc0" hidden="false">
+          <description>You can include this model in a Shattered Legion Detachment that includes models representing the same Legion as this model&apos;s corresponding variant of Legiones Astartes (X). When you do so, replace this model&apos;s Legiones Astartes (X) Special Rule with the Legiones Astartes (Shattered Legions) Special Rule. This is an exception to the normal rules for Legiones Astartes (Shattered Legions). When included in a Shattered Legions Detachment, this model must represent the same Legion as the variant of Legiones Astartes (X) that is being replaced.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="cce2-fd03-ac17-88e4" name="Sun Killer Squad" hidden="false" collective="false" import="true" type="unit">
       <modifiers>

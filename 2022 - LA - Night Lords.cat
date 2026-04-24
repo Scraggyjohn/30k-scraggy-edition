@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="36dc-14fc-8872-476b" name="LA -   VIII: Night Lords" revision="49" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="36dc-14fc-8872-476b" name="LA -   VIII: Night Lords" revision="50" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <entryLinks>
     <entryLink id="f491-c7fa-f6d3-917d" name="Contekar Terminator Squad" hidden="false" collective="false" import="false" targetId="837e-c3ca-437e-dfbf" type="selectionEntry">
       <modifiers>
@@ -5467,12 +5467,6 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa45-b63e-5c38-9ca1" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="b4fe-c595-0093-e72a" name="Power Armour" hidden="false" collective="false" import="true" targetId="2d9d-480e-7c14-1a6f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34a7-d68f-1bd6-5d2a" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ebc-7a7b-0aa8-bac8" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="4700-dc81-074b-cd49" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c635-a62f-8ea3-de0b" type="max"/>
@@ -5486,6 +5480,12 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
           </profiles>
         </entryLink>
         <entryLink id="ff99-ca5f-f3da-bbc1" name="Retinue" hidden="false" collective="false" import="true" targetId="f728-26bf-3c99-1529" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Artificer Armour" hidden="false" id="2be5-7be8-5553-3654" type="selectionEntry" targetId="583e-62cb-53f1-f952">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1935-a8bc-f684-e423" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8ef-c4fc-443a-30a7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>

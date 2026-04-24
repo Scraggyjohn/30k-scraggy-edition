@@ -157,8 +157,9 @@
         <rule id="a895-3e13-98e4-b67c" name="Primarch Unit-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
           <description>• All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
 • Primarchs are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, Primarchs always resolve Snap Shots at their normal BS.
-• Any Hits inflicted by a Primarch, as part of either Shooting Attacks or in close combat, are allocated by the Primarch’s controlling player and not the controlling player of the target unit. These Hits should form a separate Wound Pool.
-• If an army includes any Primarch models, then one of those models must be chosen as the army’s Warlord.</description>
+• Primarchs have the Precision Strikes (2+) and Precision Shots (2+) Special Rules, and may choose to use these rules when attacking even when ordinarily they would be prevented from doing so, including when making Snap Shots.
+• If an army includes any Primarch models, then one of those models must be chosen as the army’s Warlord.
+•Any unit entirely composed of models with the Primarch Unit Type may choose to ignore the Heroic Stand Special Rule, ignoring any penalties normally applied for declining a Challenge, unless the Challenge was issued by a model with the Knight, Gargantuan, Titan, Primarch, or Daemon Primarch Unit Types.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -189,6 +190,16 @@
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Preferred Enemy (Independant Characters)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Precision Shots (X)" id="4718-863e-77e1-e4e9" hidden="false" type="rule" targetId="4b71-81ee-31f4-fa09">
+          <modifiers>
+            <modifier type="set" value="Precision Shots (2+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Precision Strikes (X)" id="028c-02d6-14c5-a367" hidden="false" type="rule" targetId="2206-8497-8fe1-e973">
+          <modifiers>
+            <modifier type="set" value="Precision Strikes (2+)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -416,7 +427,9 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
           <description>• Cavalry models cannot be Pinned.
 • Cavalry models are not slowed down by Difficult Terrain, even when Charging. However, Cavalry models treat all Difficult Terrain as Dangerous Terrain instead.
 • Cavalry models move 3D6&quot; when Falling Back, rather than 2D6&quot;.
-• No model that is not also of the Cavalry Unit Type may join a unit that includes a Cavalry model.</description>
+• No model that is not also of the Cavalry Unit Type may join a unit that includes a Cavalry model.
+• For the purposes of any rules that consider number of models in a
+unit (such as Rampage), a Cavalry model counts as a number of models equal to its starting Wounds Characteristic.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -507,7 +520,9 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
           <description>• All Automata models have the Fearless special rule.
 • Successful Wounds inflicted by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Automata Unit Type.
 • A unit that includes one or more models with the Automata Unit Type may not make Reactions.
-• No model that is not also of the Automata Unit Type may join a unit that includes an Automata model.</description>
+• No model that is not also of the Automata Unit Type may join a unit that includes an Automata model.
+• For the purposes of any rules that consider number of models in a unit (such as Rampage), an Automata model counts as a number of models equal to its starting Wounds Characteristic.
+•Failed To Wound rolls made against a unit with the Automata Unit Type by a weapon with the Ordnance type or the Sunder Special Rule may be re-rolled.”</description>
         </rule>
       </rules>
       <infoLinks>
@@ -615,7 +630,10 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
 • All Dreadnought models have the Fearless special rule.
 • A model with the Dreadnought Unit Type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
 • A model of the Dreadnought type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
-• No model that is not also of the Dreadnought Unit Type may join a unit that includes a Dreadnought model.</description>
+• No model that is not also of the Dreadnought Unit Type may join a unit that includes a Dreadnought model.
+• For the purposes of any rules that consider number of models in a unit (such as Rampage), a Dreadnought model counts as a number of
+models equal to its starting Wounds Characteristic.
+•Failed To Wound rolls made against a unit with the Dreadnought Unit Type by a weapon with the Ordnance type or the Sunder Special Rule may be re-rolled.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -684,7 +702,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
 • All Daemon models have the Fear (1) special rule.
 • Any Hits inflicted on a model of the Daemon Unit Type by a weapon with the Force special rule gain the Instant Death special rule as well.
 • All Daemon models are immune to the effects of the Fear special rule, automatically pass Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a Daemon unit fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed.
-• No model that is not also of the Daemon Unit Type may join a unit that includes a Daemon model.</description>
+• No model that is not also of the Daemon Unit Type or the Corrupted Unit Sub-type may join a unit that includes a Daemon model.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -883,6 +901,14 @@ Conversely, if an Independent Character joins a unit after that unit has been th
           </modifiers>
         </infoLink>
       </infoLinks>
+      <rules>
+        <rule name="Balance change: Wound Allocation" id="8a2e-dfe1-0ec0-f443" hidden="false">
+          <description>When the Controlling Player is assigning Wounds caused by Shooting Attacks, models with the Character Unit Sub-type may only have a number of Wounds allocated to them from each Shooting Attack equal to that model&apos;s unmodified Initiative  Characteristic. When the Controlling Player is assigning Wounds in the Fight Sub-phase, models with the Character Unit Sub-type may only have a number of Wounds allocated to them by their Controlling Player equal to that model&apos;s unmodified Initiative Characteristic.  
+
+
+If a Wound would be assigned to the Controlling Player&apos;s model by the Opposing Player, then the Opposing Player may assign Wounds as they wish. If the model is removed as a casualty before all allocated Wounds have been Saved, then the Controlling Player must re-allocate these as normal. For example, if a Legion Tactical Squad suffered ten Wounds from a Shooting Attack before Saving Throws were made, the Tactical Squad Sergeant could only have a maximum of four Wounds allocated to them by the Controlling Player to make Saving Throws against.</description>
+        </rule>
+      </rules>
     </categoryEntry>
     <categoryEntry id="e8ed-ca49-ad6d-5688" name="Expanded Army Lists" hidden="false">
       <rules>
@@ -1082,8 +1108,29 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="7f9b-c5ed-7edb-02dc" name="Lumbering Sub-type" hidden="false"/>
-    <categoryEntry id="4e84-2d57-4986-2b23" name="Flyer Sub-type" hidden="false"/>
+    <categoryEntry id="7f9b-c5ed-7edb-02dc" name="Lumbering Sub-type" hidden="false">
+      <rules>
+        <rule name="Balance Change" id="dbd0-8bb7-8468-fc4e" hidden="false">
+          <description>Due to the immense size of these airborne behemoths, they are able to fire all weapons they are equipped with, suffering no penalties, as part of any Shooting Attack they make, though they follow the normal rules and restrictions on Reactions applied to the Lumbering Sub-type.</description>
+        </rule>
+        <rule name="Errata" id="1f15-540b-042f-8149" hidden="false">
+          <description>When a Lumbering Flyer suffers Catastrophic Damage, any unit Embarked upon it each suffers a number of Strength 10 AP 2 Hits equal to the number of models Embarked. These Wounds are allocated by the Embarked unit’s Controlling Player. Surviving passengers are placed where the Lumbering Flyer used to be and in unit coherency. Any models that cannot be placed are removed as casualties.The unit then takes a Pinning test.
+
+
+If a Transport is destroyed by a Shooting Attack, any unit which made a Shooting Attack targeting that Transport can, if allowed, Charge the now Disembarked passengers.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="4e84-2d57-4986-2b23" name="Flyer Sub-type" hidden="false">
+      <rules>
+        <rule name="Errata" id="f2a9-422b-c122-518a" hidden="false">
+          <description>If a flyer is forced to end its move with its base within 1&quot; of an enemy model and is unable to be placed anywhere else (such as if has suffered a Crew Stunned result) then the flyer must move the shortest possible distance to avoid the enemy model and be placed over 1&quot; away from it.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="New Rule" id="5f8c-a5da-fbeb-21a6" hidden="false" type="rule" targetId="1221-21cf-7386-a4da"/>
+      </infoLinks>
+    </categoryEntry>
     <categoryEntry id="7b0a-a743-a8da-3a39" name="Transport Sub-type" hidden="false"/>
     <categoryEntry id="7381-1130-ca6e-1806" name="Super-heavy Sub-type" hidden="false">
       <modifiers>
@@ -1101,6 +1148,11 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b17b-8b75-59f6-6442" type="max"/>
       </constraints>
+      <rules>
+        <rule name="FAQ" id="c937-5b22-e25f-88e5" hidden="false">
+          <description>All targets must be declared before any To Hit rolls are made.</description>
+        </rule>
+      </rules>
     </categoryEntry>
     <categoryEntry id="c4a5-4def-dc2c-7ce2" name="Slow Sub-type" hidden="false">
       <modifiers>
@@ -1119,14 +1171,18 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6098-fe90-8855-def8" type="max"/>
       </constraints>
+      <rules>
+        <rule name="Balance Change" id="76f4-ff26-d136-51cd" hidden="false">
+          <description>When a Slow Vehicle moves at Cruising Speed, other than to pivot in place, it is always considered to have moved at Cruising Speed regardless of how many inches it moves. it may only fire Snap Shots, regardless of the normal rules for Vehicles and Shooting</description>
+        </rule>
+      </rules>
     </categoryEntry>
     <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false">
       <rules>
         <rule name="Antigrav Sub-type" id="d33c-5dd3-b848-885d" hidden="false">
           <description>The following rules apply to all models with the Antigrav
 sub-type:
-• A unit that includes only models with the Antigrav sub-type may ignore the effects of any and all terrain it passes over during movement, including passing over vertical terrain and Impassable Terrain without penalty
-or restriction. However, such units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain tests as normal.
+• Models with the Antigrav Sub-type may move over friendly and enemy models, but cannot end their move on top of either. They may also move over all terrain, ignoring all penalties for Difficult Terrain and Dangerous Terrain. However, if a moving model with the Antigrav Sub-type starts or ends its move in Difficult Terrain or Dangerous Terrain, it must take a Dangerous Terrain test. An Antigrav model can even end its move over Impassable Terrain if it is possible to actually place the model on top of it, but if it does so it must take a Dangerous Terrain test. If an Antigrav model is forced to end its move over friendly or enemy models, move the model the minimum distance so that no models are left underneath it.
 • Models with the Antigrav sub-type may never benefit from Cover Saves of any kind.</description>
         </rule>
       </rules>
@@ -1347,13 +1403,27 @@ Damage:
 - Catastrophic Damage: When loses final HP, it explodes. Every model within 6+D6 measured from the hull takes a str7+d3 AP4 hit. Any units hit must immediately take a Pinning test.
 Reactions:
 - May only make Reactions in response to – Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.
-- May not perform Death or Glory Reactions</description>
+- May not perform Death or Glory Reactions
+- A Knight or Titan may make a Charge move against a model in area terrain, ignoring vertical distances- treat the model being charged as though it is on the ground floor for the purposes of distances. A Knight or Titan may make a melee attack against a model whose base is within 1” horizontally of their own, regardless of vertical distance.
+-A Knight or Titan gains +2 Attacks for being equipped with two Melee weapons, instead of the normal +1 it would gain for having Two Weapons </description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink name="Hammer of Wrath (X)" id="4383-66d4-7970-4bd6" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </categoryEntry>
     <categoryEntry id="4280-2d8-16c6-d60b" name="Titan Sub-type" hidden="false">
       <infoLinks>
         <infoLink name="Knights and Titans" hidden="false" type="rule" id="400b-3ae9-44d5-6df1" targetId="d0e-e683-6ab9-4f0"/>
+        <infoLink name="Hammer of Wrath (X)" id="33fa-9b28-41b1-9d8d" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (3)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </categoryEntry>
     <categoryEntry name="Unique Sub-type" hidden="false" id="aa94-5c65-d1f1-46a4"/>
@@ -7401,7 +7471,7 @@ Pyromantic Desolation (Psychic Weapon)</description>
         </profile>
         <profile id="0d1f-a4df-31cf-e0e9" name="Telekine Dome" publicationId="e77a-823a-da94-16b9" page="324" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
           <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of moving during the Movement phase, a Psyker with this Psychic Power may instead activate this Psychic Power. All models, friendly and enemy, that are within 8&quot; of the Psyker gain a 6+ Invulnerable Save when targeted by any model that is not also within 8&quot; of the Psyker. If the Psyker moves, makes a Shooting Attack, Charges or is successfully Charged by an enemy unit, then the Psychic Power ends, otherwise it remains in effect indefinitely. When initially using the Psychic Power, or at the start of any of the controlling player’s subsequent Movement phase while it is in effect, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then models affected by this Psychic Power gain a 4+ Invulnerable Save instead of a 6+ Invulnerable Save. If the Check is failed then the Psyker suffers Perils of the Warp and the Psychic Power immediately ends.</characteristic>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of moving during the Movement phase, a Psyker with this Psychic Power may instead activate this Psychic Power. All models, friendly and enemy, that are wholly within 8&quot; of the Psyker gain a 6+ Invulnerable Save when targeted by any model that is not also wholly within 8&quot; of the Psyker. If the Psyker moves, makes a Shooting Attack, Charges or is successfully Charged by an enemy unit, then the Psychic Power ends, otherwise it remains in effect indefinitely. When initially using the Psychic Power, or at the start of any of the controlling player’s subsequent Movement phase while it is in effect, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then models affected by this Psychic Power gain a 4+ Invulnerable Save instead of a 6+ Invulnerable Save. If the Check is failed then the Psyker suffers Perils of the Warp and the Psychic Power immediately ends.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7442,7 +7512,7 @@ Telekine’s Focus (Psychic Weapon)</description>
       </profiles>
       <rules>
         <rule id="9a9c-4d42-2e75-2b5f" name="Hallucinations" publicationId="e77a-823a-da94-16b9" page="325" hidden="false">
-          <description>A unit that suffers one or more Hits from a Weapon with this special rule must make an immediate Pinning test, adding one to the result of the roll for each Hit scored by this attack before the result is decided. For example, if a Psyker attacks an enemy unit that has a Leadership of 8, scoring 3 Hits with Telepathic Hallucinations, then that unit must make an immediate Pinning test and add 3 to the result rolled before determining the result.</description>
+          <description>A unit that suffers one or more Hits from a Weapon with this special rule must make an immediate Pinning test, Suffering a-1 modifier to their Leadership Characteristic for each Hit scored by this attack before the result is decided. For example, if a Psyker attacks an enemy unit that has a Leadership of 8, scoring 3 Hits with Telepathic Hallucinations, then that unit must make an immediate Pinning test with a-3 modifier to their Leadership Characteristic. Note that models with Special Rules that ignore Leadership modifiers, such as Stubborn, do not suffer this negative modifier.</description>
         </rule>
         <rule id="af85-dce5-df91-5320" name="Psychic Discipline: Telepathy" hidden="false">
           <description>A Psyker with this Discipline gains all the listed Powers, weapon and other special rules, as well as the AethericLightning Psychic Weapon.
@@ -7464,7 +7534,7 @@ Telepathic Hallucinations (Psychic Weapon)</description>
       <profiles>
         <profile id="66c0-a79f-e220-cfb2" name="Thamaturgic Succour" publicationId="e77a-823a-da94-16b9" page="325" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
           <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit with at least one model within 12&quot; and make a Psychic check. If the Psychic check is passed then all non-Vehicle models in the target unit may roll a D6. On a roll of a 5+, that model regains a single lost Wound. This ability cannot be used to increase a model’s Wounds beyond its starting Wounds Characteristic.</characteristic>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit with at least one model within 12&quot; and make a Psychic check. If the Psychic check is passed then all non-Vehicle models in the target unit regain a single lost Wound. This ability cannot be used to increase a model’s Wounds beyond its starting Wounds Characteristic.</characteristic>
           </characteristics>
         </profile>
         <profile id="021c-8e6e-e2ff-3813" name="Thamaturge&apos;s Cleansing" publicationId="e77a-823a-da94-16b9" page="325" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
@@ -17420,7 +17490,10 @@ If a model has the ability to re-roll its rolls To Hit (including because of BS 
       <description>Instead of rolling To Wound normally with this weapon, any model without the Vehicle, Dreadnought or Automata Unit Type that suffers a Hit from a weapon with this special rule must instead roll under their Strength on a D6 or suffer a Wound (a roll of a ‘6’ always counts as a failure). If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker in place after resolving all Wounds, or otherwise mark the area. This area now counts as both Difficult Terrain and Dangerous Terrain until the end of the next Game Turn.</description>
     </rule>
     <rule id="fa1e-0112-943e-b1f6" name="Guided Fire" publicationId="e77a-823a-da94-16b9" page="239" hidden="false">
-      <description>Any attacks made using a weapon with this special rule do not require line of sight, but must still be within range.</description>
+      <description>Any attacks made using a weapon with this special rule do not require line of sight, but must still be within range.
+
+
+Models wounded by a weapon with this Special Rule may never benefit from a Cover Save due to intervening terrain and models.</description>
     </rule>
     <rule id="aec0-c3aa-1e4e-1779" name="Hammer of Wrath (X)" publicationId="e77a-823a-da94-16b9" page="239" hidden="false">
       <description>If a model with this special rule ends its Charge Move in base or hull contact with an enemy model, it makes a number of additional attacks equal to the value in brackets listed as part of this special rule. These attacks hit automatically and are resolved at the models unmodified Strength with AP-. These attacks do not benefit from any of the model&apos;s special rules (such as Furious Charge, Rending, etc.).These attacks are resolved during the Fight sub-phase at Initiative step 10 but do not grant the model an additional Pile-in Move.
@@ -17570,7 +17643,8 @@ To determine whether a unit wounded by an Apocalyptic Mega-blast weapon is allow
 Hits from Apocalyptic Mega-blast weapons made against Vehicles are always resolved against their Side Armour Value.</description>
     </rule>
     <rule id="d836-747d-07d6-2b63" name="Blind" publicationId="e77a-823a-da94-16b9" page="236" hidden="false">
-      <description>Any unit hit by one or more models or weapons with this special rule must take an Initiative test at the end of the current Phase. If the Test is passed, there is no further effect. If the Initiative test is failed, all models in the unit are reduced to Weapon Skill 1 and Ballistic Skill 1 until the end of their next turn. Should the attacking unit hit themselves, they automatically pass the Test. Any model that does not have an Initiative Characteristic (for example, Vehicles, Buildings, etc) is unaffected by this special rule.</description>
+      <description>If a non-Vehicle unit suffers one or more unsaved Wounds from a weapon with the Blind Special Rule, it must take a Initiative test once the firing unit has finished its Shooting Attacks for that Phase. This is called a Blind test. If the unit fails the Test, it is Blinded. If the test is passed, there is no further effect. If the Initiative test is failed, all models in the unit are reduced to Weapon Skill 1 and Ballistic Skill 1 until the end of their Controlling Player’s next turn. Should the attacking unit
+hit themselves, they automatically pass the Initiative test. Any model that does not have an Initiative Characteristic (for example, Vehicles, Buildings, etc) are unaffected by this Special Rule</description>
     </rule>
     <rule id="676c-7b75-4b6f-9405" name="Bulky (X)" publicationId="e77a-823a-da94-16b9" page="236" hidden="false">
       <description>Bulky models count as a number of models equal to the value X in brackets after the rule’s name for the purposes of Transport Capacity and whether a given unit outnumbers another in combat.
@@ -17581,9 +17655,10 @@ For example, a unit comprised of five models all of which have the Bulky (3) spe
       <description>A model with this special rule may issue and accept Challenges as if it had the Character type. Note that this does not allow a model with this special rule to use any other special rules associated with the Character type.</description>
     </rule>
     <rule id="7ce5-1bfb-64e6-f826" name="Concussive (X)" publicationId="e77a-823a-da94-16b9" page="236" hidden="false">
-      <description>A unit that suffers one or more Wounds, regardless of whether those Wounds are Saved or otherwise discounted, from a weapon with this special rule must take a Leadership test at the end of the Shooting phase (if the attacks were inflicted as part of a Shooting Attack), or the current combat (if the attacks were inflicted as part of a Melee attack). If the test is failed then that unit’s WS is reduced by the value in brackets listed as part of the special rule until the end of the following Assault phase (if no value is listed then reduce the target unit’s WS by -1).
+      <description>Any unit hit by one or more models or weapons with this Special Rule must take a Leadership test once the attack is fully resolved. If the test is passed, there is no further effect. If the Leadership test is failed, all models in the unit suffer a penalty to their Weapon Skill equal to the value in brackets until the end of their Controlling Player’s next turn. Should the attacking unit hit themselves, they automatically pass the Leadership test. Any model that does not have a Leadership Characteristic (for example, Vehicles, Buildings, etc) are unaffected by this Special Rule.
 
-No matter how many times a unit has taken saved or unsaved Wounds from an attack with the Concussive special rule, it may only be forced to take one Leadership test because of it. If a single unit has been the target of several Concussive attacks with different values and fails the Leadership test, then it suffers the effects of the highest single modifier among those attacks – the effects do not stack or otherwise become cumulative.</description>
+
+If a single unit has been the target of several Concussive attacks with different values and fails the Leadership test, then it suffers the effects of the highest single modifier among those attacks– the effects do not stack or otherwise become cumulative.</description>
     </rule>
     <rule id="fd6d-2a76-10e0-936a" name="Counter-Attack (X)" publicationId="e77a-823a-da94-16b9" page="236" hidden="false">
       <description>If a unit contains at least one model with this special rule, and that unit is Charged, every model with the Counterattack special rule gains a number of additional Attacks equal to the value in brackets listed as part of this special rule. If no value is listed then the unit gains +1 Attack.
@@ -17632,8 +17707,11 @@ D6 Result
     </rule>
     <rule id="5986-e960-d432-affd" name="Hit &amp; Run" publicationId="e77a-823a-da94-16b9" page="240" hidden="false">
       <description>A unit that contains at least one model with this special rule that is locked in combat can choose to leave close combat at the end of any Assault phase. If the unit wishes to do so, it must take an Initiative test.
+
 If the Test is failed, nothing happens and the models remain locked in the fight.
-If the Test is passed, choose a direction – then roll 2D6 and add the unit’s Movement Characteristic to the result. As long as the distance rolled, in inches, is sufficient to allow the entire unit to move over 1&quot; away from all of the enemy units they are locked in combat with, the unit breaks away from combat and must immediately move a number of inches in the chosen direction equal to the 2D6 + Movement result, ignoring the models they were locked in combat with. No Sweeping Advance rolls are made. Enemy units that are no longer locked in combat immediately Consolidate a number of inches equal to their Initiative.
+
+If the Test is passed, choose a direction – then roll 2D6 and add the unit’s Initiative Characteristic to the result. As long as the distance rolled, in inches, is sufficient to allow the entire unit to move over 1&quot; away from all of the enemy units they are locked in combat with, the unit breaks away from combat and must immediately move a number of inches in the chosen direction equal to the 2D6 + Initiative Characteristic result, ignoring the models they were locked in combat with. No Sweeping Advance rolls are made. Enemy units that are no longer locked in combat immediately Consolidate a number of inches equal to their Initiative.
+
 A Hit &amp; Run Move is not slowed by Difficult Terrain, but does trigger Dangerous Terrain tests as normal. It may not be used to move into base or hull contact with enemy units, and models instead stop 1&quot; away. If there are units with this rule on both sides who wish to disengage, roll off to determine who goes first and then alternate disengaging them. If the last of these ends up no longer in combat, it Consolidates instead.</description>
     </rule>
     <rule id="0e32-5b92-a95a-8464" name="Infiltrate" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
@@ -17666,10 +17744,13 @@ An Independent Character without the Infiltrate special rule cannot join a unit 
       <description>When a Blast weapon with this rule is used, after the attack is resolved leave the Blast marker in play for the rest of the game and mark it with a counter of some kind. This area is now treated as Dangerous Terrain for all models with a Toughness value.</description>
     </rule>
     <rule id="6de0-55b0-bf21-48b9" name="Master-crafted" publicationId="e77a-823a-da94-16b9" page="243" hidden="false">
-      <description>Weapons with the Master-crafted special rule allow the bearer to re-roll one failed roll To Hit per turn with that weapon.</description>
+      <description>Weapons with the Master-crafted special rule allow the bearer to re-roll one failed roll To Hit per turn with that weapon.
+
+
+ Master-Crafted Blast or Template Weapons are treated as though they have the Twin-Linked Special Rule.</description>
     </rule>
     <rule id="118d-58ce-8611-ab15" name="Monster Hunter" publicationId="e77a-823a-da94-16b9" page="243" hidden="false">
-      <description>A unit that contains at least one model with this special rule re-rolls all failed To Wound rolls against Dreadnoughts, Automata and Primarch models as well as any unit with the Monstrous sub-type.</description>
+      <description>A unit that contains at least one model with this special rule re-rolls all failed To Wound rolls against Dreadnoughts, Automata and Primarch models as well as any unit with the Monstrous sub-type or Gargantuan Sub-type.</description>
     </rule>
     <rule id="2b6f-bfec-759e-1746" name="Move Through Cover" publicationId="e77a-823a-da94-16b9" page="243" hidden="false">
       <description>A unit that contains only models with this special rule suffers no penalty for moving or charging through Difficult Terrain.</description>
@@ -17678,7 +17759,7 @@ An Independent Character without the Infiltrate special rule cannot join a unit 
       <description>Attacks with this special rule cause Instant Death on a To Wound roll equal to the number in brackets associated with the specific rule. Roll any viable Saves against this Instant Death-causing Wound separately and before any other Wounds the attack inflicts.</description>
     </rule>
     <rule id="683e-b4f2-f032-d31b" name="Night Vision" publicationId="e77a-823a-da94-16b9" page="243" hidden="false">
-      <description>A unit that contains at least one model with this special rule ignores the effects of Night Fighting (see page 308) and no model may make Shrouded rolls to negate Wounds inflicted by their attacks.</description>
+      <description>A unit that contains at least one model with this special rule ignores the effects of Night Fighting (see page 308) and no model may make Shrouded rolls to negate Wounds or Hull Points inflicted by their attacks.</description>
     </rule>
     <rule id="6b78-4ec2-3604-78a3" name="Strafing Run (X)" publicationId="e77a-823a-da94-16b9" page="248" hidden="false">
       <description>When making a Shooting Attack at any unit without the Flyer sub-type, this Vehicle increases its Ballistic Skill by the value indicated as part of the special rule. For example, a Vehicle with the Strafing Run (2) special rule would increase the model’s Ballistic Skill by +2 when making Shooting Attacks targeting any unit without the Flyer sub-type.</description>
@@ -17741,7 +17822,10 @@ If a unit has both the Infiltrate and Scout special rules, that unit can deploy 
 Similarly, if a model makes a Shooting Attack with a weapon that has the Shred rule, it re-rolls its failed To Wound rolls.</description>
     </rule>
     <rule id="9222-f6c5-dc19-905a" name="Shock Pulse" publicationId="91df-ed64-4216-5bab" page="3" hidden="false">
-      <description>Any model with the Vehicle, Dreadnought or Automata Unit Type that suffers a Penetrating Hit or unsaved Wound from an attack with this special rule may only make Snap Shots when it next makes a Shooting Attack either as part of a Reaction or during its controlling player’s Shooting phase.</description>
+      <description>Any model with the Vehicle, Dreadnought or Automata Unit Type that suffers a Penetrating Hit or unsaved Wound from an attack with this special rule may only make Snap Shots when it next makes a Shooting Attack either as part of a Reaction or during its controlling player’s Shooting phase.
+
+
+Models with the Super-Heavy, Lumbering, Knight, or Titan Sub-types are not forced to make Snap Shots as part of their next Shooting Attack, instead suffering a-2 penalty to their Ballistic Skill Characteristic when they make their next Shooting Attack, and in addition, any weapons they are equipped with use a Scatter dice to roll to hit and which roll a result of ‘Hit’ on the Scatter die must re-roll it. This penalty can only be applied to a model once per turn.</description>
     </rule>
     <rule id="46b7-63a1-941c-96a5" name="Shell Shock (X)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
       <description>Pinning tests taken due to an attack or weapon with this special rule are made with a penalty to Leadership Characteristic equal to the value listed as part of the special rule.
@@ -18111,7 +18195,7 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
       <description>Immune to the effects of the Fear (X) special rule.</description>
     </rule>
     <rule id="5305-9807-b158-3c1c" name="Night Fighting" hidden="false">
-      <description>If a mission has the Night Fighting special rule, either player can declare that they wish to fight the battle at night. If either player does so, roll a D6 before deployment: on a 2+, the Night Fighting special rule is in effect during Game Turn 1. At the beginning of Game Turn 2, roll a D6, on the score of a 4+ the Night Fighting special rule is in effect during Game Turn 2 as well. At the end of Game Turn 2, all effects of the Night Fighting special rule cease, and the special rule no longer has any effect, unless another special rule states otherwise. While the Night Fighting special rule is in effect, all units on the battlefield are affected by the following conditions: 
+      <description>If a mission has the Night Fighting special rule, either player can declare that they wish to fight the battle at night. If either player does so, roll a D6 before deployment: on a 4+, the Night Fighting special rule is in effect during Game Turn 1. At the beginning of Game Turn 2, roll a D6, on the score of a 4+ the Night Fighting special rule is in effect during Game Turn 2 as well. At the end of Game Turn 2, all effects of the Night Fighting special rule cease, and the special rule no longer has any effect, unless another special rule states otherwise. While the Night Fighting special rule is in effect, all units on the battlefield are affected by the following conditions:
 • All units suffer a -1 penalty to their Leadership and Ballistic Skill.
 • No unit may draw line of sight to any unit that is more than 24&quot; away. Barrage weapons targeting units more than 24&quot; away must re-roll all results of ‘Hit’ on the
 Scatter dice.
@@ -18312,6 +18396,9 @@ A model with this Special Rule is immune to the effects of the Armourbane (Melt
     </rule>
     <rule name="Hardwired Defences" id="802c-7cdf-6c7b-ffed" hidden="false">
       <description>A Fortification with this Special Rule may not be claimed by a player which did not originally select them as part of their army.</description>
+    </rule>
+    <rule name="Countermeasures" id="1221-21cf-7386-a4da" hidden="false">
+      <description>A model with this Special Rule has a 5+ Invulnerable Save against any Shooting Attacks which have the Skyfire Special Rule made against it. A model with this Special Rule which does not make a Zoom move in the Controlling Player’s Movement Phase cannot claim the benefit of this Special Rule during the rest of the Controlling Player’s turn, as well as the Opposing Player’s turn.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

@@ -3690,7 +3690,15 @@
         </entryLink>
         <entryLink id="42cc-cf88-b137-d2de" name="Animatus Excindor (Cybertheurgic Weapon)" hidden="false" collective="false" import="true" targetId="caa2-99d2-b7a0-21b7" type="selectionEntry"/>
         <entryLink id="a7b4-ef3e-9d9e-eae0" name="Shackled Artificia - Unit Type" hidden="false" collective="false" import="true" targetId="26ab-ceec-f2da-8bfb" type="selectionEntry"/>
-        <entryLink import="true" name="Atomantic Deflector" hidden="false" id="3697-3952-0470-1ef2" type="selectionEntry" targetId="38fb-9a0b-edef-a497"/>
+        <entryLink import="true" name="Atomantic Deflector" hidden="false" id="f570-c4b8-e610-b9a2" type="selectionEntry" targetId="38fb-9a0b-edef-a497">
+          <profiles>
+            <profile name="Unstable Core" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2be4-a09d-336a-9bc0">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When the model loses its last wound, increase the explosion range by +4”</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="300"/>
@@ -3869,9 +3877,6 @@
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Siege Breaker" hidden="false" id="da4d-ea60-25b8-be9a" publicationId="a716-c1c4-7b26-8424" page="112" collective="false">
-          <modifiers>
-            <modifier type="set" value="0" field="costs"/>
-          </modifiers>
           <rules>
             <rule name="Art of Destruction" id="3a31-f617-7489-2f2e" hidden="false">
               <description>At the start of each Shooting phase, the controlling player may nominate one friendly unit with at least one model within 6&quot; of a model with this special rule. That unit gains the benefits of the Sunder special rule for the duration of that Shooting phase.</description>
@@ -3898,9 +3903,10 @@
               </constraints>
             </entryLink>
           </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
-          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e99-b544-9754-4ec9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f85-af1f-8461-70fc" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>

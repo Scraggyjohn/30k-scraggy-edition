@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="48" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <modifiers>
@@ -4176,6 +4176,11 @@
             <modifier type="set" field="name" value="Hatred (Everything)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="It Will Not Die (X)" id="73cc-c88c-8c65-bfff" hidden="false" type="rule" targetId="2784-d0be-a4e2-890f">
+          <modifiers>
+            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f22c-47a5-ca44-ccdc" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -4194,13 +4199,13 @@
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two handed, Unwieldy</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two handed, Master-Crafted</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink id="7d13-8a2a-aa1c-b384" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-            <infoLink id="d978-604d-a917-e108" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+            <infoLink name="Master-crafted" id="6a3e-4b2e-70fd-8ee5" hidden="false" type="rule" targetId="6de0-55b0-bf21-48b9"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4222,7 +4227,7 @@
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
@@ -4244,7 +4249,7 @@
           <profiles>
             <profile id="af9f-4a39-2626-23a4" name="Keeper of the Keys" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any model with the Dreadnought Unit Type and the Legiones Astartes (Salamanders) special rule within 6&quot; of a Warlord with this Trait may add +2&quot; to their Charge Distance. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any model with the Dreadnought Unit Type and the Legiones Astartes (Salamanders) special rule in the same deatchment as a Warlord with this Trait may add +2&quot; to their Charge Distance. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4302,6 +4307,13 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="215"/>
       </costs>
+      <profiles>
+        <profile name="Lord Chaplain Nomus Rhy&apos;Tan" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2c01-93b3-e894-3067">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">All models in a unit joined by Nomus Rhy’tan gain the Stubborn and Hatred (Everything) Special Rules.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="7b0e-d0bf-8ed2-8f30" name="Basic Close Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2ee4-57ed-db44-8a63" name="LA -   IV: Iron Warriors" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2ee4-57ed-db44-8a63" name="LA -   IV: Iron Warriors" revision="48" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="fe10-3104-0252-96de" name="Nârik Dreygur" hidden="true" collective="false" import="false" targetId="ac97-c8ce-16ba-9c49" type="selectionEntry">
       <modifiers>
@@ -3246,7 +3246,7 @@
       <profiles>
         <profile id="d7c2-8ef5-2d96-cfae" name="Ferrum Occularis" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Shooting Attacks made using a weapon with the Heavy type by a model with a Ferrum Occularis gain the Precision Shots (6+) special rule, as long as the attack is not made as part of a Reaction or a Snap Shot.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Shooting Attacks made using a weapon with the Heavy type by a model with a Ferrum Occularis gain the Sunder Special Rule, as long as the attack is not made as part of a Reaction or a Snap Shot.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4041,7 +4041,7 @@
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy, Transport, Unique)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10&quot;</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">5</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
@@ -4090,41 +4090,47 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="991c-c07c-0d59-7825" name="Hull (Right) Mounted twin-linked heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fef-c37a-bab1-2480" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec51-0cfa-146b-3b05" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="2b0b-1139-1a41-e3d8" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="d03c-9f7e-84fa-d6e8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3048-db63-edfd-b47a" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8ce-f954-2ddc-fd7a" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="72cf-b3cd-47b6-ff35" name="Hull (Front) Mounted twin-linked heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="72cf-b3cd-47b6-ff35" name="Hull (Front) Mounted twin-linked Shrapnel Cannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03e3-1549-d246-f464" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69be-9c70-3df9-0f42" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="31e2-eb73-8101-ac5c" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="d03c-9f7e-84fa-d6e8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a245-f675-c5a9-9288" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85d5-b81e-7baa-a2b9" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hull (Front) Mounted twin-linked Shrapnel Cannon" hidden="false" id="361b-fc56-6dcb-59a3">
+              <infoLinks>
+                <infoLink name="Pinning" id="bb89-001a-8614-5c11" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+                <infoLink name="Shrapnel Weapons Reroll 1s to Hit (Hammer of Olympia)" id="c178-e46c-a9c0-4d26" hidden="false" type="rule" targetId="7ca5-9127-867f-0a57"/>
+                <infoLink name="Twin-linked" id="38cb-e2de-0ca6-88a9" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fcc5-256b-f2d9-aa24" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="5f54-457a-fbb9-6730" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Hull (Front) Mounted twin-linked Shrapnel Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="8e92-78f6-f8cf-06a0">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Pinning</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
-        <selectionEntry id="5463-1794-887b-ba25" name="Hull (Right) Mounted lascannon" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5463-1794-887b-ba25" name="Sponson (Right) Mounted lascannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c199-ad8b-1d15-2e74" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb06-6a8e-03b1-7bbe" type="max"/>
@@ -4141,7 +4147,7 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e094-dc48-76e3-8394" name="Hull (Left) Mounted lascannon" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e094-dc48-76e3-8394" name="Sponson (Left) Mounted lascannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c594-79bb-1f82-35aa" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90e3-6a11-4443-de9b" type="max"/>
@@ -4158,22 +4164,85 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7b49-6469-2d4b-fc35" name="Hull (Left) Mounted twin-linked heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7b49-6469-2d4b-fc35" name="Hull (Left) Mounted twin-linked Shrapnel Cannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a06-2fec-9cc5-a6f3" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="589b-89b0-e5cd-5fc7" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="9aec-ad00-f835-3ca8" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="d03c-9f7e-84fa-d6e8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89df-61d7-243b-084a" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ed1-34e6-8f44-be5a" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hull (Left) Mounted twin-linked Shrapnel Cannon" hidden="false" id="2217-bd70-21c9-1deb">
+              <infoLinks>
+                <infoLink name="Pinning" id="904a-5649-e80f-0119" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+                <infoLink name="Shrapnel Weapons Reroll 1s to Hit (Hammer of Olympia)" id="797b-51fe-cb65-4597" hidden="false" type="rule" targetId="7ca5-9127-867f-0a57"/>
+                <infoLink name="Twin-linked" id="957d-304d-a271-67fb" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fcc5-256b-f2d9-aa24" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="5f54-457a-fbb9-6730" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Hull (Front) Mounted twin-linked Shrapnel Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d931-f15f-90e3-fc35">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Pinning</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hull (Right) Mounted twin-linked Shrapnel Cannon" hidden="false" id="fddd-33a5-0b91-9f74" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8478-df1a-ca64-e3ff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90e0-822e-1128-e426" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hull (Right) Mounted twin-linked Shrapnel Cannon" hidden="false" id="5da9-0c31-c131-3a99">
+              <infoLinks>
+                <infoLink name="Pinning" id="95bb-7a86-8d6c-7dea" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+                <infoLink name="Shrapnel Weapons Reroll 1s to Hit (Hammer of Olympia)" id="7379-df90-46f5-26e8" hidden="false" type="rule" targetId="7ca5-9127-867f-0a57"/>
+                <infoLink name="Twin-linked" id="35fd-0391-f681-71a5" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fcc5-256b-f2d9-aa24" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="5f54-457a-fbb9-6730" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Hull (Front) Mounted twin-linked Shrapnel Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1c5b-6917-ab75-a63d">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Pinning</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4191,7 +4260,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="800"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="750"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="35e0-3b3a-f569-3da8" name="Kyr Vhalen" hidden="false" collective="false" import="true" type="model">
@@ -4381,6 +4450,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="311f-2a92-88cf-ea1f" name="Legiones Astartes (Iron Warriors)" hidden="false" targetId="c77b-f3fc-5dc8-1330" type="rule"/>
+        <infoLink name="Traitor" id="47a4-f300-3294-1ab8" hidden="false" type="rule" targetId="eff2-8b0e-21da-2f0d"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1e3b-3776-e033-cd91" name="Terminators:" hidden="false" targetId="bab3-f50d-3e5f-2f78" primary="false"/>
