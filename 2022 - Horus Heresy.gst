@@ -3553,7 +3553,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
         <infoLink id="ec6f-dac6-c85f-47bf" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
         <infoLink id="76ab-6c3d-f739-927c" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Rending (6+)"/>
+            <modifier type="set" field="name" value="Rending (5+)"/>
           </modifiers>
         </infoLink>
         <infoLink id="a125-4942-6783-e2a3" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
@@ -7987,19 +7987,16 @@ A. No.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Breaching (4+), Reactor Overload</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Rending (4+), Reactor Overload, Plasma Burn</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="8f70-d2ca-7e73-d50f" name="Ordnance" hidden="false" targetId="6c55-22c8-1b01-2105" type="rule"/>
         <infoLink id="7355-35eb-d0ec-b453" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink id="458f-0eab-b419-0f7b" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Breaching (4+)"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="72f0-facd-626f-b9c5" name="Reactor Overload" hidden="false" targetId="a073-b86c-7bc1-d3f9" type="rule"/>
+        <infoLink name="Rending (X)" id="62a3-34bb-e1b7-6954" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d"/>
+        <infoLink name="Plasma Burn" id="a20b-5180-ed37-79d6" hidden="false" type="rule" targetId="efaa-c932-9788-9ade"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8115,7 +8112,7 @@ A. No.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 15, Pinning, Shell Shock (1)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 15, Pinning, Shell Shock (1), Reactor Overload</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8126,6 +8123,7 @@ A. No.</description>
             <modifier type="set" field="name" value="Shell Shock (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Reactor Overload" id="22c5-dde9-6e1c-e6e3" hidden="false" type="rule" targetId="a073-b86c-7bc1-d3f9"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8157,9 +8155,9 @@ A. No.</description>
         <profile id="ab97-57d4-692d-6b96" name="Baneblade Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Rending (6+), Pinning</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Rending (6+), Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8184,7 +8182,7 @@ A. No.</description>
       <profiles>
         <profile id="4034-3296-9cf1-6843" name="Tremor Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Pinning, Shell Shock (2)</characteristic>
@@ -8212,10 +8210,10 @@ A. No.</description>
       <profiles>
         <profile id="1ad7-8c18-9aa1-5b66" name="Hellhammer cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Sunder, Rending (5+), Brutal (3)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Sunder, Rending (4+), Brutal (3), Wrecker</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8236,6 +8234,7 @@ A. No.</description>
           </modifiers>
         </infoLink>
         <infoLink id="9ecc-a171-5ecb-fbff" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink name="Wrecker" id="b32c-4eac-6a0b-b3f6" hidden="false" type="rule" targetId="ba77-a802-55df-da67"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8248,7 +8247,7 @@ A. No.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Pinning, Rending (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Pinning, Rending (5+), Brutal (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8262,9 +8261,10 @@ A. No.</description>
         <infoLink id="af3a-0ec2-deae-7622" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="f2d9-3b51-0c2b-c2ac" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Rending (6+)"/>
+            <modifier type="set" field="name" value="Rending (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Brutal (X)" id="3562-fd8e-2540-c4ac" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8274,10 +8274,10 @@ A. No.</description>
       <profiles>
         <profile id="e374-d732-4d08-5952" name="Earthshaker cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">240&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;-240&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Shred, Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Shred, Pinning, Breaching (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8290,6 +8290,7 @@ A. No.</description>
         </infoLink>
         <infoLink id="23ca-c48c-ae3b-073a" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="8f76-4b67-7105-c838" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink name="Breaching (X)" id="7922-663a-2286-5ad3" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8326,8 +8327,8 @@ A. No.</description>
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;)</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Ignores Cover, Pinning, Shell Shock (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8338,6 +8339,9 @@ A. No.</description>
             <modifier type="set" field="name" value="Large Blast (5&quot;)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Pinning" id="b1a0-8d99-4325-7538" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+        <infoLink name="Shell Shock (X)" id="90fd-91ad-ab8b-c9e2" hidden="false" type="rule" targetId="46b7-63a1-941c-96a5"/>
+        <infoLink name="Ignores Cover" id="b37c-e904-e42c-2191" hidden="false" type="rule" targetId="fdb5-59e2-c446-1cbc"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8611,7 +8615,7 @@ A. No.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Pinning, Rupture (4+), Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9848,6 +9852,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="2013-d374-760f-d5e6" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="76f0-c871-4618-dc2a" name="Grenade launcher - Frag" hidden="false" targetId="7223-39b1-9ee8-bbc0" type="profile"/>
         <infoLink id="b1e5-639f-5e03-46d4" name="Grenade launcher - Krak" hidden="false" targetId="9edf-5b4f-f269-c98e" type="profile"/>
+        <infoLink name="Rupture (X)" id="c59a-e872-3dbc-9a33" hidden="false" type="rule" targetId="a33b-5786-fa09-4648"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11143,6 +11148,25 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Earthshaker Battery" hidden="false" id="95c7-3141-bc85-ca94">
+      <profiles>
+        <profile name="Earthshaker Battery" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="91a1-bd05-06c7-734e">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;-240&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Barrage, Large Blast (5&quot;), Shred, Pinning, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Barrage" id="11d9-2542-e070-05a8" hidden="false" type="rule" targetId="7255-b5ee-c3f4-3037"/>
+        <infoLink name="Rending (X)" id="3160-d099-1973-e567" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d"/>
+        <infoLink name="Shred" id="872d-b271-8ced-30ba" hidden="false" type="rule" targetId="5e7e-1628-8174-6f2c"/>
+        <infoLink name="Pinning" id="4c46-26cf-a91d-29cd" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+        <infoLink name="Breaching (X)" id="2963-5c7b-cda0-36b9" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -18070,7 +18094,7 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
       <description>A unit that includes at least one model with the Psyker Unit Sub-type or Daemon Unit Type, and which suffers one of more unsaved Wound from a weapon with this special rule also suffers Perils of the Warp (see page 201 of the Horus Heresy: Age of Darkness rulebook). Any given unit may only suffer Perils of the Warp once per Phase due to the effects of this special rule, regardless of how many enemy units attack that unit or how many weapons with this special rule are present in the attacking units.</description>
     </rule>
     <rule id="64ca-719e-b563-e3df" name="Independent Fire Control" publicationId="15a4-fc68-502d-48a9" hidden="false">
-      <description>After a model with this special rule (for a unit composed entirely of models with this special rule) has resolved a Shooting Attack targeting an enemy unit, any weapons that were not used to attack (either dur to being out of line of sight or range of the enemy units, or because the controlling player voluntarily opted not to attack with them) may make a number of Secondary Shooting Attacks using those weapons that did not fire as part of its initial Shooting Attack. Each weapon not fired as part of the initial Shooting Attack may be fired once, either all of them in a single Secondary Shooting Attack, each in a separate Secondary Shooting Attack targeting a different enemy unit of any combination - however, each weapon may only be used to attack once and in no more than one Secondary Shooting Attack. All Secondary Shooting Attacks obey all the normal rules for range and line of sight and are with a modifier of -1 on all To Hit rolls.</description>
+      <description>A model with this Special Rule may remain stationary, move at Combat Speed, or Cruising Speed, and still fire all of its weapons as though it had the Super-Heavy Sub-type. Note that this does not grant any of the other benefits of the Super-Heavy Sub type.</description>
     </rule>
     <rule id="71fa-da0d-0056-9072" name="Kharash" hidden="false">
       <modifiers>
@@ -18262,6 +18286,24 @@ make a single attack at Initiative Step 1 with it, and may not gain a bonus att
 
 
 Note that if a unit makes use of this Special Rule, they may not claim the benefits of the Firing Protocols (X) Special Rule in the same Game Turn.</description>
+    </rule>
+    <rule name="Afterburner" id="b9af-d6ce-ac5a-597d" hidden="false">
+      <description>Once per game at the start of the Movement Phase, a model with this Special Rule may elect to fire its Afterburner. If it does so, the model may make an additional move after its normal move, up to its normal movement Characteristic. Note that for this additional move, the Movement value cannot be modified in any way.</description>
+    </rule>
+    <rule name="Inertia Suppression Clamps" id="c551-8b28-be9d-067d" hidden="false">
+      <description>A model with this Special Rule can carry units composed entirely of models with the Infantry Unit Type as though any instance of the Bulky (X) Special Rule they possess had a value of 2 lower than it actually is, to a minimum of 1, for the purposes of Transport Capacity of this model only</description>
+    </rule>
+    <rule name="Caestus Prow" id="fa4f-78b2-3a7f-3b5b" hidden="false">
+      <description>A model with this Special Rule may declare a Ramming attack in the same manner as aTank, regardless of its actual unit type. This attack must be declared at the start of the Movement Phase, after you have decided whether or not the will fire its Afterburner (if it has the Afterburner Special Rule). When conducting a Ramming attack, the hit is automatically resolved at Strength 10, AP 3, and adds +1 to any rolls on the Vehicle Damage table it inflicts. If the model fired its Afterburner this turn, add +2 instead.
+
+
+In addition, the model has an Invulnerable Save of 5+ against any attacks against its Front Armour, including any damage it suffers as a result of it Ramming or being Rammed itself.
+
+
+A model with this Special Rule is immune to the effects of the Armourbane (Melta) Special Rule–meaning that no extra D6 for armour penetration can be rolled against the model as a result of this Special Rule.</description>
+    </rule>
+    <rule name="Tank Desant (X)" id="9a24-b388-f83a-ce56" hidden="false">
+      <description>Any unit embarked upon a Transport with this Special Rule may fire up to (X) ranged weapons (where X is the number in brackets next to the Special Rule), measuring from the Transport’s model. If the unit chooses to fire in this way, they are counted as having moved-note that this may prevent them from shooting certain weapon types. Units with any Special Rule that allows them to count as stationary for the purposes of Shooting attacks (such as Relentless, Legiones Astartes (Death Guard), etc) may not benefit from them whilst embarked on a Transport with this Special Rule.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
