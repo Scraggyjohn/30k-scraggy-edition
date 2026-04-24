@@ -5521,7 +5521,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                   <modifiers>
-                    <modifier type="set" value="5" field="costs"/>
+                    <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="91e4-c372-6577-e616" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry">
@@ -5532,7 +5532,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                   <modifiers>
-                    <modifier type="set" value="5" field="costs"/>
+                    <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="79ab-9d38-f571-61d3" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry">
@@ -5543,7 +5543,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                   <modifiers>
-                    <modifier type="set" value="5" field="costs"/>
+                    <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="6ebb-a7ed-8d58-a850" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
@@ -5554,7 +5554,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                   <modifiers>
-                    <modifier type="set" value="5" field="costs"/>
+                    <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="c016-8cd9-264f-f786" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
@@ -5565,7 +5565,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                   <modifiers>
-                    <modifier type="set" value="5" field="costs"/>
+                    <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="6816-4fef-8524-bf97" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
@@ -5576,7 +5576,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                   <modifiers>
-                    <modifier type="set" value="5" field="costs"/>
+                    <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="6b97-eca9-7368-0b88" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
@@ -5587,7 +5587,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                   <modifiers>
-                    <modifier type="set" value="5" field="costs"/>
+                    <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="30eb-a7ed-a1ac-730e" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry">
@@ -5748,7 +5748,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="ed39-859a-cb79-cb48" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="20d9-83b9-c533-7048" type="selectionEntry">
@@ -5759,7 +5759,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="449a-6b47-9a3c-f197" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="6f53-4c43-ba83-4b2f" type="selectionEntry">
@@ -5770,7 +5770,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="3e3e-091b-2b04-b662" name="Power Maul" hidden="false" collective="false" import="true" targetId="98e8-f217-dea9-0493" type="selectionEntry">
@@ -5781,7 +5781,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="9d3c-05e1-f655-83d4" name="Power Sword" hidden="false" collective="false" import="true" targetId="fa06-cac0-3d98-125e" type="selectionEntry">
@@ -5792,7 +5792,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="ca51-7aa7-b893-4382" name="Power Lance" hidden="false" collective="false" import="true" targetId="fca3-4ec1-c581-1ba3" type="selectionEntry">
@@ -5803,7 +5803,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="4acf-1d83-746b-ef04" name="Power Axe" hidden="false" collective="false" import="true" targetId="ef98-66ac-fcaf-c15d" type="selectionEntry">
@@ -5814,7 +5814,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="a972-4640-9199-d3e8" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="d596-faa8-a6c2-5d81" type="selectionEntry">
@@ -6019,7 +6019,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="d3ef-660c-0039-e3ef" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry">
@@ -6030,7 +6030,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="7a90-36b2-0777-95f0" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry">
@@ -6041,7 +6041,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="4269-3680-bcb1-189e" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
@@ -6052,7 +6052,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="fb45-d866-84e8-4093" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
@@ -6063,7 +6063,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="2a1d-7abb-b856-f907" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
@@ -6074,7 +6074,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="4f87-5b9b-ede1-a67e" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
@@ -6085,7 +6085,7 @@ In addition, an army whose Warlord has this trait may make an additional Reactio
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                       <modifiers>
-                        <modifier type="set" value="5" field="costs"/>
+                        <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
                       </modifiers>
                     </entryLink>
                     <entryLink id="d8e0-2af1-97a6-eebf" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry">
