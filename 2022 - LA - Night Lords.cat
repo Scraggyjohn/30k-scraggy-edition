@@ -1326,12 +1326,10 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="7897-ea6c-4555-b94b" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
-          <comment>template_id_b24f-3ae0-4cbb-b016</comment>
-        </categoryLink>
         <categoryLink id="2e6d-a5bc-484e-b30a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_fd26-8e6b-4521-92b9</comment>
         </categoryLink>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="07cb-fd32-ebf5-83d9" primary="true" name="Heavy Support:"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9cb7-e623-a570-7f9b" name="Legion Malcador Assault Tank Squadron" hidden="true" collective="false" import="false" targetId="528b-183f-5e27-8b0c" type="selectionEntry">

@@ -1492,12 +1492,10 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="3b5d-0be9-43ef-bada" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
-          <comment>template_id_b24f-3ae0-4cbb-b016</comment>
-        </categoryLink>
         <categoryLink id="2b29-273c-4d80-bc7d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_fd26-8e6b-4521-92b9</comment>
         </categoryLink>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="e7f3-311d-bb0e-deb9" primary="true" name="Heavy Support:"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3951-5694-c7f3-15cf" name="Legion Banehammer" hidden="true" collective="false" import="false" targetId="1240-c71c-3a60-cf20" type="selectionEntry">
