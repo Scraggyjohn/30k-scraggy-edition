@@ -77159,6 +77159,9 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e433-0e7c-c9cf-f562" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
