@@ -70304,6 +70304,13 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
       </costs>
+      <profiles>
+        <profile name="Saturnine Teleport Synchroniser" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="91e1-15a2-7374-df74">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">If this Terminator Saturnine Command Squad is attached to a Saturnine Praetor with the Deep Strike special rule, This squad may also deep strike.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
