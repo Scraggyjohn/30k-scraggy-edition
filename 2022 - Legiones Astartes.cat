@@ -76706,7 +76706,6 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8fb-dd8a-c5ad-dc76" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a093-cade-b6f8-9465" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
@@ -77004,7 +77003,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
     </selectionEntryGroup>
     <selectionEntryGroup name="Saturnine Terminator Command Weapons" id="7207-0bee-5a65-f198" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Plasma Bombard" hidden="false" id="af95-5f5c-bbcb-ed6c" defaultAmount="1">
+        <selectionEntry type="upgrade" import="true" name="Plasma Bombard" hidden="false" id="af95-5f5c-bbcb-ed6c" defaultAmount="0">
           <profiles>
             <profile name="Plasma Bombard - Maximal Fire" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="662b-bf4e-6cc3-04b7">
               <characteristics>
@@ -77039,7 +77038,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Saturnine Disruption Fist" hidden="false" id="7bb7-d5da-ca3e-f055" defaultAmount="2">
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
           <profiles>
             <profile name="Saturnine Disruption Fist" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="bffd-9a9c-e027-b1c8">
@@ -77088,7 +77087,6 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae8e-b6c5-9734-ab4c" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c50c-58e9-2aa2-6ac2" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
@@ -77136,7 +77134,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="615c-4c75-018b-18f5" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Saturnine War Axe" hidden="false" id="d57a-d75a-efb6-2f3c" defaultAmount="1">
+        <selectionEntry type="upgrade" import="true" name="Saturnine War Axe" hidden="false" id="d57a-d75a-efb6-2f3c" defaultAmount="0">
           <profiles>
             <profile name="Saturnine War Axe" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1eaf-cea8-72a0-3bf7">
               <characteristics>
