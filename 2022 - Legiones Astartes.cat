@@ -69914,7 +69914,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
         <selectionEntryGroup name="2) Legion Saturnine Chosen" id="4bff-9d18-d118-96ab" hidden="false" collective="false" import="true" defaultSelectionEntryId="844b-bbdf-4b57-72f7">
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="79dd-3850-7703-d184" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5689-2532-7bb1-3cf1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5689-2532-7bb1-3cf1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Saturnine Chosen" hidden="false" id="7f49-0046-9126-f5b6" collective="false" defaultAmount="1">
@@ -77035,6 +77035,9 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e986-d2ae-4e75-25c0" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Saturnine Disruption Fist" hidden="false" id="7bb7-d5da-ca3e-f055" defaultAmount="2">
           <costs>
@@ -77115,6 +77118,9 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
             <infoLink name="Twin-linked" id="a88a-de43-9df9-c739" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
             <infoLink name="Instant Death" id="9d4f-7e42-96fa-3953" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f562-6f1f-85a1-7cba" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Saturnine Concussion Hammer" hidden="false" id="e44f-efdf-308b-eff9">
           <costs>
