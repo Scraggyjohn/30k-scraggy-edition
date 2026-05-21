@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <infoLinks>
@@ -611,7 +611,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="76da-acc0-3ffb-6161" name="Hetaeron Guard Squad" publicationId="15a4-fc68-502d-48a9" page="22" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="76da-acc0-3ffb-6161" name="Hetaeron Guard Sodality" publicationId="15a4-fc68-502d-48a9" page="22" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="32f8-7e42-c31c-ccd5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="938c-a0fe-81b1-0843" name="Legio Custodes" hidden="false" targetId="ccca-a9de-0cd9-f8be" primary="false"/>
@@ -916,7 +916,7 @@
         <infoLink name="Stubborn" id="b442-52d5-08a3-de69" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry id="258c-214d-bc9d-35e1" name="Aquilon Terminator Squad" publicationId="15a4-fc68-502d-48a9" page="23" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="258c-214d-bc9d-35e1" name="Aquilon Terminator Sodality" publicationId="15a4-fc68-502d-48a9" page="23" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="8ba8-abcf-a835-86cb" name="Legio Custodes" hidden="false" targetId="6998-b328-c080-5341" type="rule"/>
         <infoLink id="9e16-0ef1-ee37-b650" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
@@ -1215,7 +1215,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7cec-fe1b-5748-7af3" name="Custodian Guard Squad" publicationId="15a4-fc68-502d-48a9" page="25" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7cec-fe1b-5748-7af3" name="Custodian Guard Sodality" publicationId="15a4-fc68-502d-48a9" page="25" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="354a-2ea5-33cf-e75b" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
@@ -1561,7 +1561,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="206f-680f-4be9-6307" name="Sentinel Guard Squad" publicationId="15a4-fc68-502d-48a9" page="26" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="206f-680f-4be9-6307" name="Sentinel Guard Sodality" publicationId="15a4-fc68-502d-48a9" page="26" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="a79c-10e6-1d3e-ec7f" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
         <infoLink id="b5d9-aa4b-5ea4-ebcb" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
@@ -1866,7 +1866,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="180"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f6b3-1e25-1353-0a50" name="Agamatus Jetbike Squadron" publicationId="15a4-fc68-502d-48a9" page="28" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="f6b3-1e25-1353-0a50" name="Agamatus Jetbike Sodality" publicationId="15a4-fc68-502d-48a9" page="28" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="6058-7d4b-c3b3-749a" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
         <infoLink id="a590-ac49-6e82-7343" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
@@ -2019,7 +2019,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2ce3-4ce5-d86f-543f" name="Pallas Attack Speeder Squadron" publicationId="15a4-fc68-502d-48a9" page="29" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="2ce3-4ce5-d86f-543f" name="Pallas Attack Speeder Sodality" publicationId="15a4-fc68-502d-48a9" page="29" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="0392-7b04-7950-2ce6" name="Legio Custodes" hidden="false" targetId="6998-b328-c080-5341" type="rule"/>
         <infoLink id="e860-4609-b8ba-104c" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
@@ -2105,7 +2105,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4c7e-42e0-1c1e-5ba9" name="Custodian Venatari Squad" publicationId="15a4-fc68-502d-48a9" page="30" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="4c7e-42e0-1c1e-5ba9" name="Venatari Sodality" publicationId="15a4-fc68-502d-48a9" page="30" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="16c7-c9d9-a85c-1a75" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
         <infoLink id="dc6c-9d19-fcfa-d4df" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
@@ -2280,7 +2280,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8a39-6452-e075-c8d6" name="Sagittarum Guard Squad" publicationId="15a4-fc68-502d-48a9" page="31" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="8a39-6452-e075-c8d6" name="Sagittarum Guard Sodality" publicationId="15a4-fc68-502d-48a9" page="31" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="6557-9fa8-7790-d9d3" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
         <infoLink id="1ff6-d875-4d05-59d9" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
