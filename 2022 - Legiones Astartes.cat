@@ -70396,6 +70396,105 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
               </rules>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="One Legionary may swap its Bolter for one of the following:" id="ff30-cdd0-ba79-9467" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Flamer" hidden="false" id="73b2-6a79-ecc8-cc36" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d84-9738-b578-3c26" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Plasma Gun" hidden="false" id="ab14-4cae-26fe-802e" type="selectionEntry" targetId="f0d1-332b-c719-ede7">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0c4-71af-e66f-4366" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="10" field="d2ee-04cb-5f8a-2642"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Meltagun" hidden="false" id="0a6d-c191-1d6f-4b80" type="selectionEntry" targetId="4ebd-57e0-3560-e568">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1369-9f47-cdc0-4ba2" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="15" field="d2ee-04cb-5f8a-2642"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Volkite Charger" hidden="false" id="c430-ce18-d420-40e6" type="selectionEntry" targetId="6f6e-ad55-e093-6503">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bde-8d17-b2e8-a314" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Volkite Caliver" hidden="false" id="1a8c-efd9-b9b2-69ba" type="selectionEntry" targetId="9250-490f-abeb-b901">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c454-9d5c-b77c-26d1" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="10" field="d2ee-04cb-5f8a-2642"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Rotor Cannon" hidden="false" id="4ce0-a445-5221-a22f" type="selectionEntry" targetId="5ce3-3aa5-3f5e-9ead">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e0f-3d9b-563b-8c26" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="10" field="d2ee-04cb-5f8a-2642"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Plasma Repeater" hidden="false" id="3138-ee29-f5be-7ce0" type="selectionEntry" targetId="7aa4-cb4e-0e15-6213">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d78f-ea4f-1cc3-6a40" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="15" field="d2ee-04cb-5f8a-2642"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Graviton Gun" hidden="false" id="fb01-01c6-6afb-e782" type="selectionEntry" targetId="5303-5a3e-de51-1707">
+                  <modifiers>
+                    <modifier type="set" value="10" field="d2ee-04cb-5f8a-2642"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Graviton Shredder" hidden="false" id="f211-e8b2-53e6-2ee9" type="selectionEntry" targetId="0849-b63b-0b1b-fd4f">
+                  <modifiers>
+                    <modifier type="set" value="15" field="d2ee-04cb-5f8a-2642"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Alchem Flamer" hidden="false" id="eb58-57ee-ac63-e928" type="selectionEntry" targetId="0d08-eaaf-3793-0a70">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cd2-48df-2440-275f" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="5" field="d2ee-04cb-5f8a-2642"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Æther-Fire Blaster" hidden="false" id="c482-8d98-fafe-6700" type="selectionEntry" targetId="d078-5f42-c02b-c73d">
+                  <modifiers>
+                    <modifier type="set" value="15" field="d2ee-04cb-5f8a-2642"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32cd-8245-2e29-b261" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Warpfire Blaster" hidden="false" id="7614-cc0d-1ad8-91e6" type="selectionEntry" targetId="76c7-1d7c-206a-32a5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84a3-edc3-1bb0-84c3" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="20" field="d2ee-04cb-5f8a-2642"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0118-d588-9be0-bbbb" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
