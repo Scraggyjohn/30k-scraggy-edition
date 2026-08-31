@@ -38127,18 +38127,6 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
-            <entryLink id="e604-a35e-2799-f0a9" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="bac9-5389-e2e7-0b1f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f87-b709-2c56-cefd" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
             <entryLink id="489b-38b0-8283-adc7" name="Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="975e-14eb-caed-4b5b" type="selectionEntry">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
@@ -38190,6 +38178,15 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
+            </entryLink>
+            <entryLink import="true" name="Infantry Lascannon" hidden="false" id="e7a1-7771-59a1-bb63" type="selectionEntry" targetId="6fdc-9eba-8cca-c178">
+              <modifiers>
+                <modifier type="increment" value="10" field="d2ee-04cb-5f8a-2642">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="bac9-5389-e2e7-0b1f" childId="1f87-b709-2c56-cefd" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -60440,68 +60437,6 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                   <comment>The Flesh Is Weak</comment>
                 </modifierGroup>
               </modifierGroups>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Offhand" id="e5da-4020-105d-4480" hidden="false" collective="false" import="true" defaultSelectionEntryId="6eaf-2e0e-29f5-1995">
-                  <modifiers>
-                    <modifier type="set" value="1" field="559e-c3a7-3336-7fca">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="ec5b-93a5-ae52-1f64" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c016-f87c-1135-2b6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="559e-c3a7-3336-7fca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Asphyx Bolt Pistol" hidden="false" id="f0c0-8c20-ae8b-1042" collective="false" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0080-3947-f5a1-a8da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="0dd0-018c-00fb-3f90" collective="false" targetId="e5ae-6872-37aa-8600" type="selectionEntry" defaultAmount="1">
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="dbd4-930e-e003-9449" childId="7d72-7f6d-6330-6871" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                                <condition type="atLeast" value="1" field="selections" scope="dbd4-930e-e003-9449" childId="880e-822b-0170-cff5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35ff-d37b-e664-4b13" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Shrapnel Pistol" hidden="false" id="6267-c127-5c2f-3b98" collective="false" targetId="7d72-7f6d-6330-6871" type="selectionEntry">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="241d-b250-eafe-c038" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Weapons of Desperation" hidden="false" id="bf61-2660-646a-e3b5" type="selectionEntryGroup" targetId="c999-de13-a619-1879">
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="force" childId="c7be-f327-8718-3dfb" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d56a-0aef-2acd-8cdf" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Destroyer w/Disintegrator Rifle, Chainaxe" hidden="false" id="0071-f8ed-d8e9-3031" collective="false" sortIndex="23">
               <modifiers>
@@ -60620,68 +60555,6 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                   </modifierGroups>
                 </selectionEntry>
               </selectionEntries>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Offhand" id="f7b5-2a7c-bd45-5d2d" hidden="false" collective="false" import="true" defaultSelectionEntryId="6eaf-2e0e-29f5-1995">
-                  <modifiers>
-                    <modifier type="set" value="1" field="fbe6-0fa3-ede2-bdd0">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="ec5b-93a5-ae52-1f64" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="05b6-0a16-bf2d-5316" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="fbe6-0fa3-ede2-bdd0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Asphyx Bolt Pistol" hidden="false" id="52cb-e796-334d-68e3" collective="false" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87d9-1339-2a69-8e49" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="5fdd-f814-5477-f51e" collective="false" targetId="e5ae-6872-37aa-8600" type="selectionEntry" defaultAmount="1">
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="dbd4-930e-e003-9449" childId="7d72-7f6d-6330-6871" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                                <condition type="atLeast" value="1" field="selections" scope="dbd4-930e-e003-9449" childId="880e-822b-0170-cff5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ac3-c12c-5a64-836d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Shrapnel Pistol" hidden="false" id="d74f-bb6c-0500-218b" collective="false" targetId="7d72-7f6d-6330-6871" type="selectionEntry">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66fe-7268-8391-caf7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Weapons of Desperation" hidden="false" id="c409-9129-2963-7049" type="selectionEntryGroup" targetId="c999-de13-a619-1879">
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="force" childId="c7be-f327-8718-3dfb" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0a50-0419-d88e-71ea" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Destroyer w/Disintegrator Rifle, Fenrisian Axe" hidden="false" id="9ef0-fb06-06cf-79c3" collective="false" sortIndex="24">
               <modifiers>
@@ -60792,68 +60665,6 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                   </modifierGroups>
                 </selectionEntry>
               </selectionEntries>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Offhand" id="0d8f-8daf-35ac-65c7" hidden="false" collective="false" import="true" defaultSelectionEntryId="6eaf-2e0e-29f5-1995">
-                  <modifiers>
-                    <modifier type="set" value="1" field="eaa6-097f-6b2c-39b8">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="ec5b-93a5-ae52-1f64" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8221-d13b-fc18-762d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="eaa6-097f-6b2c-39b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Asphyx Bolt Pistol" hidden="false" id="305e-d2a3-c0a2-1e3b" collective="false" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e688-089f-ff97-fb3c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="2278-776e-8f0b-72c0" collective="false" targetId="e5ae-6872-37aa-8600" type="selectionEntry" defaultAmount="1">
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="dbd4-930e-e003-9449" childId="7d72-7f6d-6330-6871" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                                <condition type="atLeast" value="1" field="selections" scope="dbd4-930e-e003-9449" childId="880e-822b-0170-cff5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18f2-d501-dd82-bbf7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Shrapnel Pistol" hidden="false" id="60a7-94e6-37b4-b777" collective="false" targetId="7d72-7f6d-6330-6871" type="selectionEntry">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41f6-0a7b-cf2f-2dea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Weapons of Desperation" hidden="false" id="d97d-9e89-eb81-67b4" type="selectionEntryGroup" targetId="c999-de13-a619-1879">
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="force" childId="c7be-f327-8718-3dfb" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0031-12f8-1017-55eb" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -70497,6 +70308,21 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
           </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infantry Lascannon" hidden="false" id="6fdc-9eba-8cca-c178">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Infantry Lascannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f513-812d-410f-b55b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
