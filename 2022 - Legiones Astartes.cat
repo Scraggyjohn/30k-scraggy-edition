@@ -77019,6 +77019,9 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
           </modifiers>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a09-adb7-0e83-6851" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Saturnine Terminator Command Weapons" id="7207-0bee-5a65-f198" hidden="false">
       <selectionEntries>
