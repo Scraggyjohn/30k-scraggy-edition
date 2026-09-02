@@ -1128,7 +1128,7 @@ If a Transport is destroyed by a Shooting Attack, any unit which made a Shootin
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="New Rule" id="5f8c-a5da-fbeb-21a6" hidden="false" type="rule" targetId="1221-21cf-7386-a4da"/>
+        <infoLink name="Countermeasures" id="5f8c-a5da-fbeb-21a6" hidden="false" type="rule" targetId="1221-21cf-7386-a4da"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="7b0a-a743-a8da-3a39" name="Transport Sub-type" hidden="false"/>
@@ -1405,7 +1405,7 @@ Reactions:
 - May only make Reactions in response to – Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.
 - May not perform Death or Glory Reactions
 - A Knight or Titan may make a Charge move against a model in area terrain, ignoring vertical distances- treat the model being charged as though it is on the ground floor for the purposes of distances. A Knight or Titan may make a melee attack against a model whose base is within 1” horizontally of their own, regardless of vertical distance.
--A Knight or Titan gains +2 Attacks for being equipped with two Melee weapons, instead of the normal +1 it would gain for having Two Weapons </description>
+-A Knight or Titan gains +2 Attacks for being equipped with two Melee weapons, instead of the normal +1 it would gain for having Two Weapons</description>
         </rule>
       </rules>
       <infoLinks>
@@ -6263,6 +6263,9 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
               </modifiers>
             </entryLink>
           </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06fa-4360-10d1-5a72" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
